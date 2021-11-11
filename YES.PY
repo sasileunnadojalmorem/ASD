@@ -1,7 +1,7 @@
 import os
 import time
 from datetime import datetime, timedelta
-
+import random
 # 현재시간 기준 날짜
 time2 = datetime.now()
 i =1
@@ -21,3 +21,4 @@ while i < 200:
     os.system(f'git push origin main')
 
     print(f'{i + 1}회차 완료되었음')
+    i +=  random.randrange(1,7)
